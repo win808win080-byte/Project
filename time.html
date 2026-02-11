@@ -133,6 +133,63 @@
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+/* ===== Responsive สำหรับมือถือ ===== */
+@media (max-width: 768px) {
+
+  header {
+    padding: 50px 15px;
+  }
+
+  header h1 {
+    font-size: 22px;
+  }
+
+  header p {
+    font-size: 14px;
+  }
+
+  /* เมนูบน */
+  nav {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 13px;
+    padding: 6px 8px;
+  }
+
+  /* dropdown menu */
+  .menu {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .menu > li > a {
+    padding: 12px;
+  }
+
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    border-radius: 0;
+    min-width: 100%;
+  }
+
+  /* card */
+  .card {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  /* วิดีโอ จาก 2 ช่อง → 1 ช่อง */
+  .video-row {
+    grid-template-columns: 1fr;
+  }
+}
 
   </style>
 </head>
